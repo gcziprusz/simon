@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Simon Says</title>
+        <meta name="description" content="Simon Says JS game">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+			
+		  <link href="favicon.ico" rel="icon" type="image/x-icon" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. 
+            Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <section class="simon">
+			<a id="one" class="touchpad" href="#" data-sector="1">one</a>
+			<a id="two"  class="touchpad" href="#" data-sector="2">two</a>
+			<a id="three"  class="touchpad" href="#" data-sector="3">three</a>
+			<a id="four"  class="touchpad" href="#" data-sector="4">four</a>			        
+        <nav>
+				<h1>Simon</h1>				
+				<button class="btn start">Start</button>
+				
+				<fieldset>
+    				<legend>Level <span id="level">one</span></legend>
+				</fieldset>        
+        </nav>
+        <aside id="score" class="result hide">
+				<h2 class="note"></h2>
+				<a id="play_again" href="" onclick="javascript:location.reload();">Play Again</a>
+			</aside>        	
+        </section>
+
+        <script src="js/main.js"></script>
+		  <audio id="beep">
+ 	 			<source src="sound/beep.ogg" type="audio/ogg">
+  				<source src="sound/beep.mp3" type="audio/mpeg">
+		  </audio>
+    </body>
+</html>
